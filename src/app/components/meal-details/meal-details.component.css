@@ -1,0 +1,36 @@
+.page-container {
+    flex-direction: column;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.carta {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2%;
+}
+.carta.imagen-platillo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carta.imagen-platillo .titulo-platillo {
+    color: #430851;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.carta .contenedor-lista {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}

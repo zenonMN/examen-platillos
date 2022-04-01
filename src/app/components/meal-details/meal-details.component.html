@@ -1,0 +1,34 @@
+<div class="page-container">
+    <div class="titulo">
+        <h2>Detalle del Platillo</h2>
+    </div>
+    <div class="carta imagen-platillo">
+        <img [src]="meal ? meal.strMealThumb : '../../assets/svg/meal.svg'" alt="imagen platillo" height="250">
+        <div class="titulo-platillo">{{meal ? meal.strMeal: 'loading...'}}</div>
+    </div>
+    <div class="carta">
+        <h2>Ingredientes</h2>
+        <div class="contenedor-lista">
+            <div>
+                <ul>
+                    <li *ngFor="let measurement of measurements.slice(0,10)">{{measurement.measure}} {{measurement.ingredient}}</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li *ngFor="let measurement of measurements.slice(10,19)">{{measurement.measure}} {{measurement.ingredient}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <h2>Instrucciones</h2>
+        <div>
+            {{meal ? meal.strInstructions: 'loading...'}}
+        </div>
+    </div>
+    <div class="carta imagen-platillo">
+        <h2>Video</h2>
+        <iframe *ngIf="meal" width="420" height="350" [src]="getYoutubeUrl(meal.strYoutube)" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>

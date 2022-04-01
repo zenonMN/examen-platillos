@@ -1,0 +1,18 @@
+<div class="page-container">
+    <div class="welcome-content">
+        <div class="titulo">
+            <h2>¡Bienvenido/a!</h2>
+        </div>
+        <div class="contenedor-platillo">
+            <h2>Platillo del Día</h2>
+            <div class="carta" (click)="goToDetails()">
+                <div class="img">
+                    <img [src]="platillo ? platillo.strMealThumb : '../../assets/svg/meal.svg'" alt="imagen alimento" height="250">
+                </div>
+                <div style="width: 100%; padding: 10px;">
+                    <h2>{{platillo ? platillo.strMeal: 'loading...'}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

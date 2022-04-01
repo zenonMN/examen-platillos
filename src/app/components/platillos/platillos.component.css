@@ -1,0 +1,65 @@
+.page-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.table-container{
+    padding: 10px;
+    text-align: initial;
+}
+
+.meal-carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.drag-scroll-content{
+    overflow: hidden !important;
+}
+
+.carousel-container{
+    text-align: center;
+    width: 99%;
+    cursor: pointer;
+}
+
+.tabla {
+    width: 100%;
+    margin-top: 2%;
+}
+ .tabla .fila {
+    text-align: center;
+}
+ .tabla tr {
+    cursor: pointer;
+}
+ .contenedor-carousel {
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+ .contenedor-carousel .carta {
+    position: relative;
+    background: white;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+ .contenedor-carousel .carta .body {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+ .contenedor-carousel .carta .body h2 {
+    color: #430851;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
